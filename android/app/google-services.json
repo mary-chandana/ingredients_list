@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390858510832",
+    "project_id": "ingredientslist-67684",
+    "storage_bucket": "ingredientslist-67684.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390858510832:android:905ee36e4592368a1f4d35",
+        "android_client_info": {
+          "package_name": "com.chandana.ingredients_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390858510832-7klost05phoqq80du43lcsiq80kd810a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLIeK-aELCQI-T5ByYOEIn8FlHNx0gcxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390858510832-7klost05phoqq80du43lcsiq80kd810a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
