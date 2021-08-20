@@ -173,7 +173,7 @@ class _FoodFormState extends State<FoodForm> {
               children: _subingredients
                   .map(
                     (ingredient) => Card(
-                      color: Colors.black54,
+                      color: Colors.blueGrey[800],
                       child: Center(
                         child: Text(
                           ingredient,

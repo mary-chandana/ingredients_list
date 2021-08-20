@@ -167,7 +167,10 @@ class _LoginState extends State<Login> {
                   Text(
                     "Ingredients List",
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 36, color: Colors.black),
+                    style: TextStyle(
+                        fontSize: 40,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(height: 32),
                   _authMode == AuthMode.Signup

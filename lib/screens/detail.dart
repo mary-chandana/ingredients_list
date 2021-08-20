@@ -22,6 +22,7 @@ class FoodDetail extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Container(
+            padding: EdgeInsets.all(20.0),
             child: Column(
               children: <Widget>[
                 SizedBox(height: 24),
@@ -45,14 +46,14 @@ class FoodDetail extends StatelessWidget {
                 GridView.count(
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
-                  padding: EdgeInsets.all(8),
+                  padding: EdgeInsets.all(6),
                   crossAxisCount: 3,
                   crossAxisSpacing: 4,
                   mainAxisSpacing: 4,
                   children: foodNotifier.currentFood.subIngredients
                       .map(
                         (ingredient) => Card(
-                          color: Colors.black54,
+                          color: Colors.blueGrey[800],
                           child: Center(
                             child: Text(
                               ingredient,
@@ -84,6 +85,7 @@ class FoodDetail extends StatelessWidget {
               );
             },
             child: Icon(Icons.edit),
+            backgroundColor: Colors.green,
             foregroundColor: Colors.white,
           ),
           SizedBox(height: 20),

@@ -64,7 +64,7 @@ class _FeedState extends State<Feed> {
           itemCount: foodNotifier.foodList.length,
           separatorBuilder: (BuildContext context, int index) {
             return Divider(
-              color: Colors.black,
+              color: Colors.blueGrey[800],
             );
           },
         ),
