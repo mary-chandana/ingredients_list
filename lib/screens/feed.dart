@@ -49,22 +49,24 @@ class _FeedState extends State<Feed> {
       body: new RefreshIndicator(
         child: ListView.separated(
           itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-              title: Text(foodNotifier.foodList[index].name),
-              subtitle: Text(foodNotifier.foodList[index].category),
-              onTap: () {
-                foodNotifier.currentFood = foodNotifier.foodList[index];
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (BuildContext context) {
-                  return FoodDetail();
-                }));
-              },
+            return Card(
+              child: ListTile(
+                title: Text(foodNotifier.foodList[index].name),
+                subtitle: Text(foodNotifier.foodList[index].category),
+                onTap: () {
+                  foodNotifier.currentFood = foodNotifier.foodList[index];
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (BuildContext context) {
+                    return FoodDetail();
+                  }));
+                },
+              ),
             );
           },
           itemCount: foodNotifier.foodList.length,
           separatorBuilder: (BuildContext context, int index) {
             return Divider(
-              color: Colors.blueGrey[800],
+              color: Colors.transparent,
             );
           },
         ),
